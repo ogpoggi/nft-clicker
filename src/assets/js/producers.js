@@ -5,63 +5,63 @@ const producers = [
         id: uuid(),
         name: 'Cursor',
         price: 30,
-        cookiePerSeconds: 1,
+        nftPerSeconds: 1,
         purchased: 0
     },
     {
         id: uuid(),
         name: 'Grandma',
         price: 100,
-        cookiePerSeconds: 5,
+        nftPerSeconds: 5,
         purchased: 0
     },
     {
         id: uuid(),
-        name: 'Cookie Farm',
+        name: 'NFT Farm',
         price: 500,
-        cookiePerSeconds: 20,
+        nftPerSeconds: 20,
         purchased: 0
     },
     {
         id: uuid(),
-        name: 'Cookie Tree',
+        name: 'NFT Tree',
         price: 1500,
-        cookiePerSeconds: 100,
+        nftPerSeconds: 100,
         purchased: 0
     },
     {
         id: uuid(),
-        name: 'Cookie Factory',
+        name: 'NFT Factory',
         price: 3000,
-        cookiePerSeconds: 250,
+        nftPerSeconds: 250,
         purchased: 0
     },
     {
         id: uuid(),
-        name: 'Cookie Mine',
+        name: 'NFT Mine',
         price: 7000,
-        cookiePerSeconds: 600,
+        nftPerSeconds: 600,
         purchased: 0
     },
     {
         id: uuid(),
-        name: 'Cookie Lab',
+        name: 'NFT Lab',
         price: 10000,
-        cookiePerSeconds: 900,
+        nftPerSeconds: 900,
         purchased: 0
     },
     {
         id: uuid(),
-        name: 'Cookie Time Machine',
+        name: 'NFT Time Machine',
         price: 20000,
-        cookiePerSeconds: 1900,
+        nftPerSeconds: 1900,
         purchased: 0
     },
     {
         id: uuid(),
-        name: 'Cookie World',
+        name: 'NFT World',
         price: 999999999999,
-        cookiePerSeconds: 9999999999999999999,
+        nftPerSeconds: 9999999999999999999,
         purchased: 0
     }
 ]

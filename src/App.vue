@@ -26,13 +26,13 @@
       methods: {
           farmProducers () {
             setInterval(() => {
-                let cookieCount = 0
+                let nftCount = 0
 
                 for (let producer of this.producers) {
-                    cookieCount += producer.cookiePerSeconds * producer.purchased
+                    nftCount += producer.nftPerSeconds * producer.purchased
                 }
 
-                this.$store.commit('ADD_COOKIES', { cookies: cookieCount })
+                this.$store.commit('ADD_NFTS', { nfts: nftCount })
 
             }, this.delayMs)
           }

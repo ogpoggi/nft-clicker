@@ -7,7 +7,7 @@ Vue.use(Vuex)
 
 const state = {
     producers: producers,
-    cookies: 0
+    nfts: 0
 }
 
 const mutations = {
@@ -15,18 +15,18 @@ const mutations = {
         state.producers = state.producers.map(producer => {
             if (producer.id === producerId) {
                 producer.purchased++
-                state.cookies -= producer.price
+                state.nfts -= producer.price
                 producer.price = 1.22 * producer.price
             }
 
             return producer
         })
     },
-    CLICK_COOKIE (state) {
-        state.cookies++
+    CLICK_NFT (state) {
+        state.nfts++
     },
-    ADD_COOKIES (state, { cookies }) {
-        state.cookies += cookies
+    ADD_NFTS (state, { nfts }) {
+        state.nfts += nfts
     }
 }
 

@@ -1,17 +1,17 @@
 <template>
     <div class="game">
-        <CookieSection />
+        <NftSection />
         <StoreSection />
     </div>
 </template>
 
 <script>
-    import CookieSection from '@/components/CookieSection'
+    import NftSection from '@/components/NftSection'
     import StoreSection from '@/components/StoreSection'
 
     export default {
         components: {
-            CookieSection,
+            NftSection,
             StoreSection
         }
     }
@@ -22,5 +22,5 @@
         height: 100%;
         background: white;
         display: flex;
-    }    
+    }
 </style>

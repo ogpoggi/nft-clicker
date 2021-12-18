@@ -1,11 +1,11 @@
 <template>
   <div class="content">
     <div class="head">
-      <h1>Welcome to Vue Cookie Clicker</h1>
-      <span class="subtitle">a cookie clicker clone developped with Vue.js and Vuex</span>
+      <h1>Welcome to Vue NFT Clicker</h1>
+      <span class="subtitle">An NFT clicker with Vue</span>
       <div class="action">
         <router-link to="/game">
-          <button class="btn btn-main">Let's get some cookies !</button>
+          <button class="btn btn-main">Let's get some NFT !</button>
         </router-link>
       </div>
     </div>

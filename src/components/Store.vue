@@ -2,9 +2,9 @@
     <div class="store" @click="buy">
         <div class="desc">
             <h4>{{ producer.name }}</h4>
-            <small>+{{ producer.cookiePerSeconds.toLocaleString('fr-FR', { maximumFractionDigits: 2 }) }} cookies/s</small>
+            <small>+{{ producer.nftPerSeconds.toLocaleString('fr-FR', { maximumFractionDigits: 2 }) }} nfts/s</small>
             <div class="price">
-                <img class="icon" src="/static/svg/cookie.svg" alt="">
+                <img class="icon" src="/static/svg/Epic/AstroSafemoon.svg" alt="">
                 <div :class="{'text-green': canBuy === true, 'text-red': canBuy === false }">{{ producer.price.toLocaleString('fr-FR', { maximumFractionDigits: 2 }) }}</div>
             </div>
         </div>
@@ -21,11 +21,11 @@
     export default {
         props: ['producer'],
         computed: {
-            totalCookies: function () {
-                return this.$store.state.cookies
+            totalNfts: function () {
+                return this.$store.state.nfts
             },
             canBuy: function () {
-                return this.totalCookies >= this.producer.price
+                return this.totalNfts >= this.producer.price
             }
         },
         methods: {
